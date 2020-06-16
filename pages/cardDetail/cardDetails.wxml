@@ -1,0 +1,55 @@
+<!--pages/cardDetail/cardDetails.wxml-->
+<view class="body_card">
+	<view class="body_item">
+
+		<view class="body_item_tilte">
+			<view class="body_img"></view>
+
+			<view class="body_user_info">
+				<view class="body_user">发起者</view>
+				<view class="body_data">2020/3/16</view>
+			</view>
+
+			<view class="body_info_content">
+				打卡内容
+			</view>
+		</view>
+
+		<view class="body_content">
+			<view>
+				每天早睡早起，6：30起床，12睡觉
+			</view>
+		</view>
+
+		<view class="body_footer">
+			<text class="countdown">已经坚持了 1/10000天</text>
+			<view>已经加入 1 人</view>
+		</view>
+	</view>
+
+	<view class="join">
+		<view class="join_bnt" bindtap="join">{{join}}</view>
+		<view class="thank" wx:if="{{join_index == 2}}">
+			<textarea placeholder="请输入打卡感想，也可以不输入，最多50个字"></textarea>
+		</view>
+	</view>
+
+  <view class="record">
+    <view class="record_title">打卡记录</view>
+    <view class="record_item" wx:for="12" wx:key="*this">
+      <view class="record_user">
+        <view class="body_img"></view>
+
+        <view class="body_user_info">
+          <view class="body_user">发起者</view>
+          <view class="body_data">2020/3/16</view>
+        </view>
+      </view>
+
+      <view class="record_content">aaaa</view>
+      <view class="record_icon">
+        <view>点赞(图标没找到)</view>
+      </view>
+    </view> 
+  </view>
+</view>
