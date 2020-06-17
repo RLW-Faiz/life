@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e9e9e9;
   height: 100vh;
   width: 100%;
 }
@@ -27,12 +26,25 @@
   background-color: red;
 }
 .head_item_border{
-  border-bottom: 1px solid black;
+  position: relative;
+}
+.head_item_border::after{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 5rpx;
+  background-color: black;
+  animation: move 1s ease-in;
 }
 
 .body{
   margin-top: 100rpx;
-  padding: 0 30rpx;
+  padding-bottom: 160rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #e9e9e9;
   width: 100%;
   box-sizing: border-box;
 }
@@ -110,4 +122,64 @@
   height: 90rpx;
   line-height: 90rpx;
   border-bottom: 5rpx solid green;
+}
+
+.body_launch{
+  margin-top: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.launch_title{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+  width: 100%;
+  height: 70rpx;
+  font-weight: 800;
+  border-bottom: 5rpx solid rgb(232, 227, 227);
+  box-sizing: border-box;
+}
+.launch_text{
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+  font-size: 28rpx;
+  border-bottom: 1rpx solid  #b0b0b0;
+}
+.set_launchtext{
+  height: 50vh;
+}
+.text_num{
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #b0b0b0;
+  text-align: right;
+}
+.day_mount{
+  display: flex;
+  align-items: center;
+  padding-left: 50rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #b0b0b0;
+}
+.set_day{
+  width: 250rpx;
+  height: 40rpx;
+}
+.day_text{  
+  color: rgb(242, 50, 50);
+}
+.sure{
+  height: 140rpx;
+  font-size: 40rpx;
+  line-height: 140rpx;
+  text-align: center;
+}
+@keyframes move{
+  0% {
+    width: 20%;
+  }
+  100%{
+    width: 100%;
+  }
 }

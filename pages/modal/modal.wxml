@@ -7,8 +7,21 @@
 		</view>
 	</view>
 
-	<view class="body">
-		<view class="body_item" bindtap="gotoDetail" wx:for="12" wx:key="*this">
+  <view class="body_launch" wx:if="{{selected == 2}}">
+    <textarea class="launch_title" placeholder="请输入标题"></textarea>
+    <view class="launch_text">
+      <textarea class="set_launchtext" placeholder="请输入内容"></textarea>
+      <view class="text_num">0/500</view>
+    </view>
+    <view class="day_mount">
+      <view class="day_text">总的天数：</view>
+      <textarea class="set_day" placeholder="请输入总的天数"></textarea>
+    </view>
+    <view class="sure">确认</view>
+  </view>
+
+	<view class="body" style="{{index<1?'height: 100vh;':''}}" wx:else="{{selected == 1}}">
+		<view class="body_item" bindtap="gotoDetail" wx:for="1234" wx:key="*this">
 
       <view class="body_item_tilte">
         <view class="body_img"></view>
@@ -36,5 +49,8 @@
 		</view>
  
 	</view>
+
+  
+
 </view>
 <tabbar tab_index="{{index}}"></tabbar>

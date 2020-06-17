@@ -28,13 +28,13 @@
 	</view>
 
 	<view class="join">
-		<view class="join_bnt" bindtap="join">{{join}}</view>
+		<view class="join_bnt" style="{{join_index == 3 ?'background-color:#b0b0b0' :''}}" bindtap="join">{{join}}</view>
 		<view class="thank" wx:if="{{join_index == 2}}">
 			<textarea placeholder="请输入打卡感想，也可以不输入，最多50个字"></textarea>
 		</view>
 	</view>
 
-  <view class="record">
+  <view class="record" wx:if="{{join_index > 1}}">
     <view class="record_title">打卡记录</view>
     <view class="record_item" wx:for="12" wx:key="*this">
       <view class="record_user">
