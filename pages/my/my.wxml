@@ -1,2 +1,3 @@
 <!--pages/my/my.wxml-->
 <text>pages/my/my.wxml</text>
+<tabbar tab_index="{{index}}"></tabbar>

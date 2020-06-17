@@ -27,7 +27,7 @@
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -65,8 +65,8 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "模块",
+					"id": 0,
+					"name": "打卡",
 					"pathName": "pages/modal/modal",
 					"query": "",
 					"scene": null
@@ -75,6 +75,14 @@
 					"id": -1,
 					"name": "打卡详情",
 					"pathName": "pages/cardDetail/cardDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/index/index",
+					"query": "",
 					"scene": null
 				}
 			]

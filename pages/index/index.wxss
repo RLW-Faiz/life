@@ -1,21 +1,87 @@
 /**index.wxss**/
-.userinfo {
+.index{
+  padding: 20rpx 30rpx 200rpx 30rpx;
+  box-sizing: border-box;
+}
+.hot_topic{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #b0b0b0;
+  background-color: white;
+  box-shadow: 0 0 5rpx 5rpx #e6d7d7;
+  box-sizing: border-box;
+}
+.hot_head{
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 80rpx;
+}
+.hot_title{
+  display: flex;
+  align-items: flex-end;
+}
+.hot_title_border{
+  margin-right: 15rpx;
+  width: 7rpx;
+  height: 28rpx;
+  background-color: greenyellow;
+}
+.hot_title_text{
+  font-weight: 800;
+}
+.hot_more{
+  font-size: 27rpx;
+}
+.hot_topic_body{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  justify-content: space-between;
+}
+.hot_topic_body_details{
+  font-size: 44rpx;
+}
+.hot_btn{
+  display: flex;
+  justify-content: center;
+}
+.hot_issue_btn{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  padding: 15rpx 120rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #b0b0b0;
+  background-color: white;
+  box-shadow: 0 0 5rpx 5rpx #e6d7d7;
+}
+.hot{
+  margin-top: 100rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #b0b0b0;
+  background-color: white;
+  box-shadow: 0 0 5rpx 5rpx #e6d7d7;
+  box-sizing: border-box;
+}
+.hot_issue_item{
+  display: flex;
   align-items: center;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.hot_issue_img{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  background-color: green;
 }
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.hot_issue_text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height: 150rpx;
 }

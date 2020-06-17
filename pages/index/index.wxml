@@ -1,14 +1,42 @@
 <!--index.wxml-->
-<view class="container">
-  <view class="userinfo">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-    <block wx:else>
-      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
-      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-    </block>
+<view class="index">
+  <view class="hot_topic">
+    <view class="hot_head">
+      <view class="hot_title">
+        <view class="hot_title_border"></view>
+        <view class="hot_title_text">热门话题</view>
+      </view>
+      <view class="hot_more">更多 ></view>
+    </view>
+
+    <view class="hot_topic_body" wx:for="1234" wx:key="*this">
+     <view>对于不开学你有什么想法</view>
+     <view class="hot_topic_body_details">></view>
+    </view>
+
+    <view class="hot_btn">
+      <view class="hot_issue_btn">发布话题</view>
+    </view>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
+
+  <view class="hot" wx:for="{{hot_arr}}" wx:key="*this">
+    <view class="hot_head">
+      <view class="hot_title">
+        <view class="hot_title_border"></view>
+        <view class="hot_title_text">{{item.title}}</view>
+      </view>
+      <view class="hot_more">更多 ></view>
+    </view>
+    <view class="hot_issue_item" wx:for="1234" wx:key="*this">
+      <view class="hot_issue_img"></view>
+      <view class="hot_issue_text">
+        <view class="hot_issue_text_title">考研经验</view>
+        <view class="hot_issue_text_content">分享各种经验~</view>
+      </view>
+    </view>
+    <view class="hot_btn">
+      <view class="hot_issue_btn">{{item.btn_text}}</view>
+    </view>
   </view>
-  <tabbar tab_index="{{index}}"></tabbar>
 </view>
+<tabbar tab_index="{{index}}"></tabbar>

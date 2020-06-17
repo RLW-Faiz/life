@@ -17,7 +17,12 @@ Component({
       pagePath: "/pages/modal/modal",
       iconPath: "/image/icon/home.png",
       selectedIconPath: "/image/icon/home_selecte.png",
-      text: "模块"
+      text: "打卡"
+    }, {
+      pagePath: "/pages/my/my",
+      iconPath: "/image/icon/home.png",
+      selectedIconPath: "/image/icon/home_selecte.png",
+      text: "我的"
     }]
   },
   attached() {
