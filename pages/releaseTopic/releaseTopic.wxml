@@ -1,0 +1,7 @@
+<!--pages/releaseTopic/releaseTopic.wxml-->
+<textarea class="topic_name" placeholder-class="topic_name_placeholder" placeholder="请输入话题标题" bindinput="topic_name_inp" ></textarea>
+<textarea class="topic_content container" placeholder="请输入话题内容" bindinput="topic_content_inp"></textarea>
+<view class="topic_num container">{{now_num}}/{{max_num}}</view>
+<view class="share_btn">
+	<view class="share" style="{{topic_name != '' && now_num >0 ? '':'background-color: #dbcdcd'}}" bindtap="{{topic_name != '' && now_num >0 ? 'share':''}}">分享</view>
+</view>

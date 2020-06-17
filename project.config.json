@@ -84,6 +84,13 @@
 					"pathName": "pages/index/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "新增话题",
+					"pathName": "pages/releaseTopic/releaseTopic",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

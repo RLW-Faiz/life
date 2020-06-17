@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/modal/modal",
     "pages/my/my",
-    "pages/cardDetail/cardDetails"
+    "pages/cardDetail/cardDetails",
+    "pages/releaseTopic/releaseTopic"
   ],
   "tabBar": {
     "custom": true,
