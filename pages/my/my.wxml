@@ -1,3 +1,19 @@
 <!--pages/my/my.wxml-->
-<text>pages/my/my.wxml</text>
+<view class="my">
+	<view class="my_user_info">
+		<view class="my_user_img"></view>
+		<view class="my_user_name">陈俊杰</view>
+		<view class="personal_center">个人中心></view>
+	</view>
+
+	<view class="my_user_opeation">
+		<view class="my_opeations" wx:for="{{my_opeations_arr}}" wx:key="*this">
+			<view class="my_opeations_group">
+				<view class="my_opeations_icon"></view>
+				<view>{{item}}</view>
+			</view>
+			<view>></view>
+		</view>
+	</view>
+</view>
 <tabbar tab_index="{{index}}"></tabbar>

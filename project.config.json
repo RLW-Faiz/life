@@ -112,6 +112,13 @@
 					"pathName": "pages/searchResult/searchResult",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 7,
+					"name": "我的",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

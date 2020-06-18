@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    index: 2
+    index: 2,
+    my_opeations_arr:['我的收藏','我的消息','联系客服']
   },
 
   /**

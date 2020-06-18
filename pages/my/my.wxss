@@ -1,1 +1,56 @@
 /* pages/my/my.wxss */
+page{
+  background-color: #f7f3f3;
+}
+.my{
+  padding: 30rpx 30rpx 120rpx 30rpx;
+}
+.my_user_info{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 250rpx;
+  border-radius: 15rpx;
+  background-color: rgb(228, 228, 228);
+}
+.my_user_img{
+  margin-left: 60rpx;
+  margin-right: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 60rpx;
+  background-color: green;
+}
+.my_user_name{
+  font-size: 28rpx;
+  font-weight: 800;
+  color: #333;
+}
+.personal_center{
+  margin-left: 200rpx;
+  font-size: 26rpx;
+  color: #acacac;
+}
+.my_user_opeation{
+  margin-top: 60rpx;
+  border-radius: 15rpx;
+  background-color: white;
+}
+.my_opeations_icon{
+  margin-right: 20rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: green;
+}
+.my_opeations{
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120rpx;
+}
+.my_opeations_group{
+  display: flex;
+  align-items: center;
+}
