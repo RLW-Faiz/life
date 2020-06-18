@@ -1,0 +1,9 @@
+<!--pages/searchResult/searchResult.wxml-->
+<view class="result_item" wx:for="123" wx:key="*this" bindtap="get_topic">
+  <view>对于不开学有什么想法</view>
+  <view class="result_display">
+    <view class="result_see"></view>
+    <view class="result_see_num">1</view>
+    <view class="result_opeation">></view>
+  </view>
+</view>

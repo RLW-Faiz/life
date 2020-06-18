@@ -1,0 +1,23 @@
+<!--pages/topicList/topicList.wxml-->
+<view class="search">
+  <search></search>
+</view>
+
+<view class="search_list">
+  <view class="search_item {{index == set_title?'search_title':''}}" wx:for="{{search_item}}" data-index="{{index}}" wx:key="*this" bindtap="change_title">
+    <view class="{{index==set_title ?'search_item_icon_selected':'search_item_icon'}}"></view>
+    <view>{{item.text}}</view>
+  </view>
+</view>
+<view class="result_change">换一换</view>
+
+<view class="result_list">
+  <view class="result_item" wx:for="12345" wx:key="*this">
+    <view class="all_result_img" style="background-color: {{color_arr[index]}};" wx:if="{{set_title==0}}">{{index+1}}</view>
+    <view class="result_icon" wx:else></view>
+    <view>对于不开学你有什么想法</view>
+    <view class="result_see"></view>
+    <view class="result_see_num">8</view>
+    <view>></view>
+  </view>
+</view>

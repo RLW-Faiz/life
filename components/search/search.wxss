@@ -1,0 +1,22 @@
+/* components/search/search.wxss */
+.search_item{
+  position: relative;
+  padding: 15rpx 30rpx;
+}
+.search_text {
+  padding-left: 60rpx;
+  background-color: #f2eded;
+  width: inherit;
+  height: 67rpx;
+  line-height: 67rpx;
+  box-sizing: border-box;
+}
+
+.search_icon {
+  position: absolute;
+  top: 15px;
+  left: 55rpx;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: green;
+}

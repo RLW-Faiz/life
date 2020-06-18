@@ -1,56 +1,54 @@
 <!--pages/modal/modal.wxml-->
-<view class="all">
-	<view class="head">
-		<view class="head_item {{selected == index ? 'head_item_border':''}}" wx:for="{{head_item}}" wx:key="*this" bindtap="changeTitle" data-select="{{index}}">
-			<view class="head_img"></view>
-			<view class="">{{item.title}}</view>
+
+<view class="head">
+	<view class="head_item {{selected == index ? 'head_item_border':''}}" wx:for="{{head_item}}" wx:key="*this" bindtap="changeTitle" data-select="{{index}}">
+		<view class="head_img"></view>
+		<view class="">{{item.title}}</view>
+	</view>
+</view>
+
+<view class="body_launch" wx:if="{{selected == 2}}">
+	<input class="launch_title" placeholder="请输入标题"></input>
+	<view class="launch_text">
+		<textarea class="set_launchtext" placeholder="请输入内容"></textarea>
+		<view class="text_num">0/500</view>
+	</view>
+	<view class="day_mount">
+		<view class="day_text">总的天数：</view>
+		<input class="set_day" placeholder="请输入总的天数"></input>
+	</view>
+	<view class="sure">确认</view>
+</view>
+
+<view class="body" wx:else="{{selected == 1}}">
+	<view class="body_item" bindtap="gotoDetail" wx:for="1234" wx:key="*this">
+
+		<view class="body_item_tilte">
+			<view class="body_img"></view>
+
+			<view class="body_user_info">
+				<view class="body_user">发起者</view>
+				<view class="body_data">2020/3/16</view>
+			</view>
+
+			<view class="body_info_content">
+				打卡内容
+			</view>
+		</view>
+
+		<view class="body_content">
+			<view>
+				每天早睡早起，6：30起床，12睡觉
+			</view>
+		</view>
+
+		<view class="body_footer">
+			<view>还需要坚持 <text class="countdown">100</text> 天</view>
+			<view>已经加入 1 人</view>
 		</view>
 	</view>
-
-  <view class="body_launch" wx:if="{{selected == 2}}">
-    <textarea class="launch_title" placeholder="请输入标题"></textarea>
-    <view class="launch_text">
-      <textarea class="set_launchtext" placeholder="请输入内容"></textarea>
-      <view class="text_num">0/500</view>
-    </view>
-    <view class="day_mount">
-      <view class="day_text">总的天数：</view>
-      <textarea class="set_day" placeholder="请输入总的天数"></textarea>
-    </view>
-    <view class="sure">确认</view>
-  </view>
-
-	<view class="body" style="{{index<1?'height: 100vh;':''}}" wx:else="{{selected == 1}}">
-		<view class="body_item" bindtap="gotoDetail" wx:for="1234" wx:key="*this">
-
-      <view class="body_item_tilte">
-        <view class="body_img"></view>
-
-        <view class="body_user_info">
-          <view class="body_user">发起者</view>
-          <view class="body_data">2020/3/16</view>
-        </view>
-
-        <view class="body_info_content">
-          打卡内容
-        </view>
-      </view>
-
-      <view class="body_content">
-        <view>
-          每天早睡早起，6：30起床，12睡觉
-        </view>
-      </view>
-			
-      <view class="body_footer">
-        <view>还需要坚持 <text class="countdown">100</text> 天</view>
-        <view>已经加入 1 人</view>
-      </view>
-		</view>
- 
-	</view>
-
-  
 
 </view>
+
+
 <tabbar tab_index="{{index}}"></tabbar>

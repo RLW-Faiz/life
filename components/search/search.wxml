@@ -1,0 +1,6 @@
+<!--components/search/search.wxml-->
+<!-- <textarea class="search_text" placeholder="请输入话题的关键词"></textarea> -->
+<view class="search_item">
+	<input class="search_text" placeholder="请输入话题的关键词"></input>
+  <view class="search_icon"></view>
+</view>

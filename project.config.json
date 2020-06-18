@@ -98,6 +98,20 @@
 					"pathName": "pages/topicContent/topicContent",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "话题列表",
+					"pathName": "pages/topicList/topicList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 6,
+					"name": "搜索结果",
+					"pathName": "pages/searchResult/searchResult",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

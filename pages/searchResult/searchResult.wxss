@@ -1,0 +1,29 @@
+/* pages/searchResult/searchResult.wxss */
+page{
+  background-color: #b0b0b0;
+}
+.result_item{
+  padding: 25rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  color: #b0b0b0;
+  background-color: white;
+  border-bottom: 1rpx solid #b0b0b0;
+  box-sizing: border-box;
+}
+.result_display{
+  display: flex;
+  align-items: center;
+}
+.result_see{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: red;
+}
+.result_see_num{
+  margin-right: 50rpx;
+}
+.result_opeation{
+  font-size: 38rpx;
+}

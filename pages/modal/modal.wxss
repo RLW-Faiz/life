@@ -1,15 +1,13 @@
 /* pages/modal/modal.wxss */
-.all{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
+page{
+  background-color: #e9e9e9;
 }
 .head{
   position: fixed;
   display: flex;
   justify-content: center;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100rpx;
   background-color: white;
@@ -40,12 +38,9 @@
 }
 
 .body{
-  margin-top: 100rpx;
-  padding-bottom: 160rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
-  background-color: #e9e9e9;
+  padding: 100rpx 30rpx 160rpx 30rpx;
   width: 100%;
+  background-color: white;
   box-sizing: border-box;
 }
 .body_item{
@@ -125,10 +120,9 @@
 }
 
 .body_launch{
-  margin-top: 100rpx;
-  padding-left: 30rpx;
-  padding-right: 30rpx;
+  padding: 100rpx 30rpx;
   width: 100%;
+  background-color: white;
   box-sizing: border-box;
 }
 .launch_title{

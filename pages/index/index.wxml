@@ -6,7 +6,7 @@
         <view class="hot_title_border"></view>
         <view class="hot_title_text">热门话题</view>
       </view>
-      <view class="hot_more">更多 ></view>
+      <view class="hot_more" data-status="2" bindtap="get_more">更多 ></view>
     </view>
 
     <view class="hot_topic_body" bindtap="get_hot_topic" wx:for="1234" wx:key="*this">
@@ -25,7 +25,7 @@
         <view class="hot_title_border"></view>
         <view class="hot_title_text">{{item.title}}</view>
       </view>
-      <view class="hot_more">更多 ></view>
+      <view class="hot_more" data-status="{{index}}"  bindtap="get_more">更多 ></view>
     </view>
     <view class="hot_issue_item" wx:for="1234" wx:key="*this">
       <view class="hot_issue_img"></view>
