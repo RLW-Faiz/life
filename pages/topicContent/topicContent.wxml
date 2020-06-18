@@ -1,0 +1,33 @@
+<view class="all">
+	<view class="container container_title">
+		<view class="user">
+			<view class="user_img"></view>
+			<view class="user_info">
+				<view class="user_name">陈俊杰</view>
+				<view class="user_date">2020-05-27</view>
+			</view>
+		</view>
+
+		<view class="content_title">#对于不开学你有什么想法#</view>
+		<view class="content">一起来说说吧</view>
+
+		<view class="user_opeation">
+			<view class="delete">删除</view>
+			<view class="see_like">
+				<view class="opeations" wx:for="12" wx:key="*this">
+					<view class="opeations_img"></view>
+					<view class="opeations_num">1</view>
+				</view>
+        <view class="opeations" wx:for="1" wx:key="*this">
+					<view class="opeations_img"></view>
+					<view class="opeations_collection">收藏</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+	<!-- <view class="user_comment_no">这里还没有任何评论呢</view> -->
+  <comment wx:for="12" wx:key="*this"></comment>
+</view>
+
+<comment_send></comment_send>

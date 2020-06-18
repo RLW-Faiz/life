@@ -1,0 +1,78 @@
+/* pages/topicContent/topicContent.wxss */
+.user{
+  display: flex;
+}
+.user_img{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  background-color: green;
+}
+.user_info{
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.user_date{
+  font-size: 24rpx;
+  color: #b0b0b0;
+}
+.content_title{
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 28rpx;
+  font-weight: 800;
+}
+.content{
+  font-size: 28rpx;
+  color: #b0b0b0;
+}
+.delete{
+  font-size: 28rpx;
+  color: rgb(249, 71, 71);
+}
+.user_opeation{
+  margin-top: 40rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.see_like{
+  display: flex;
+  justify-content: flex-end;
+  width: 100rpx;
+}
+.opeations{
+  display: flex;
+  align-items: center;
+}
+.opeations_img{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: #b0b0b0;
+}
+.opeations_num{
+  font-size: 30rpx;
+  color: #b0b0b0;
+}
+.opeations_collection{
+  margin-left: 5rpx;
+  width: 35px;
+  font-size: 27rpx;
+  color: #b0b0b0;
+}
+.all{
+  height: 100vh;
+  background-color: #eee6e6;
+}
+.container_title{
+  padding-top: 20rpx;
+  background-color: white;
+}
+.user_comment_no{
+  margin-top: 40rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #cfbdbd;
+}

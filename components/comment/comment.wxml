@@ -1,0 +1,19 @@
+<!--components/comment/comment.wxml-->
+<view class="comment">
+  <view class="comment_user">
+    <view class="comment_user_img"></view>
+
+    <view class="comment_user_info">
+      <view class="comment_user_name">王浩</view>
+      <view class="comment_user_date">2020-05-28</view>
+    </view>
+
+    <view class="comment_user_delete">删除</view>
+  </view>
+
+  <view class="comment_user_content">卧槽，开学了</view>
+  <view class="comment_user_like">
+    <view class="comment_user_like_icon"></view>
+    <view class="comment_user_like_num">1</view>
+  </view>
+</view>

@@ -4,7 +4,8 @@
     "pages/modal/modal",
     "pages/my/my",
     "pages/cardDetail/cardDetails",
-    "pages/releaseTopic/releaseTopic"
+    "pages/releaseTopic/releaseTopic",
+    "pages/topicContent/topicContent"
   ],
   "tabBar": {
     "custom": true,

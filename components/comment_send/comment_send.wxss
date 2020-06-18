@@ -1,0 +1,30 @@
+/* components/comment/comment.wxss */
+.comment_send{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100rpx;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0 -4rpx 4rpx 0 #dcd5d5;
+}
+.comment_send_text{
+  width: 70%;
+  height: 40rpx;
+}
+.comment_send_opeation{
+  width: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  color: white;
+  font-size: 30rpx;
+  background-color: green;
+}

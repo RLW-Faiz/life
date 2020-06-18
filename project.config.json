@@ -91,6 +91,13 @@
 					"pathName": "pages/releaseTopic/releaseTopic",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "话题详情",
+					"pathName": "pages/topicContent/topicContent",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

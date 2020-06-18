@@ -1,0 +1,5 @@
+<!--components/comment/comment.wxml-->
+<view class="comment_send">
+  <textarea class="comment_send_text" placeholder="请输入评论内容"></textarea>
+  <view class="comment_send_opeation">发送</view>
+</view>

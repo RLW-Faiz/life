@@ -9,13 +9,13 @@
       <view class="hot_more">更多 ></view>
     </view>
 
-    <view class="hot_topic_body" wx:for="1234" wx:key="*this">
+    <view class="hot_topic_body" bindtap="get_hot_topic" wx:for="1234" wx:key="*this">
      <view>对于不开学你有什么想法</view>
      <view class="hot_topic_body_details">></view>
     </view>
 
     <view class="hot_btn">
-      <view class="hot_issue_btn">发布话题</view>
+      <view class="hot_issue_btn" bindtap="issue" data-status="2">发布话题</view>
     </view>
   </view>
 
@@ -35,7 +35,7 @@
       </view>
     </view>
     <view class="hot_btn">
-      <view class="hot_issue_btn">{{item.btn_text}}</view>
+      <view class="hot_issue_btn" data-status="{{index}}" bindtap="issue">{{item.btn_text}}</view>
     </view>
   </view>
 </view>

@@ -17,6 +17,21 @@ Page({
       },
     ]
   },
+  issue(e){
+    let index =e.currentTarget.dataset.status,
+    url2 = '/pages/releaseTopic/releaseTopic',  // 发布话题
+    url1 ='', //收藏的模板
+    url = ''; //申请模板
+    wx.navigateTo({
+      url: index == 2? url2:index == 1? url1 :url,
+    })
+  },
+  get_hot_topic(){
+    let url = '/pages/topicContent/topicContent'
+    wx.navigateTo({
+      url,
+    })
+  },
   //事件处理函数
   onLoad: function () {
 

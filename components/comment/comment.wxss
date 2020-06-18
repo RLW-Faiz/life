@@ -1,0 +1,55 @@
+/* components/comment/comment.wxss */
+.comment{
+  margin-top: 5rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  background-color: white;
+}
+.comment_user{
+  display: flex;
+  height: 90rpx;
+}
+.comment_user_img{
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  background-color: green;
+}
+.comment_user_info{
+  margin-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.comment_user_name{
+  font-size: 34rpx;
+  color: #b0b0b0;
+}
+.comment_user_date{
+  font-size: 24rpx;
+  color: #d3c6c6;
+}
+.comment_user_delete{
+  margin-left: 400rpx;
+  font-size: 28rpx;
+  color: rgb(244, 75, 75);
+}
+.comment_user_content{
+  margin-top: 20rpx;
+  padding-left: 100rpx;
+  padding-right: 100rpx;
+}
+.comment_user_like{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.comment_user_like_icon{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  background-color: green;
+}
+.comment_user_like_num{
+  color: #b0b0b0;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "comment_send":"/components/comment_send/comment_send",
+    "comment":"/components/comment/comment"
+  },
+  "navigationBarTitleText": "话题内容"
+}
