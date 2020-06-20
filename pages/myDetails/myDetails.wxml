@@ -1,0 +1,89 @@
+<!--pages/myDetails/myDetails.wxml-->
+<view class="user_head">
+	<view class="user_info">
+		<view class="user_img"></view>
+		<view>
+			<view class="user_people">
+				<view>名字：</view>
+				<input value="陈俊杰" disabled="{{isdisabled}}"></input>
+			</view>
+			<view class="user_people">
+				<view>性别：</view>
+				<input value="男" disabled="{{isdisabled}}"></input>
+			</view>
+			<view class="user_people">
+				<view>院系：</view>
+				<input value="软件工程" disabled="{{isdisabled}}"></input>
+			</view>
+		</view>
+	</view>
+
+	<view class="updata_btn" bindtap="updata">
+		<view class="all_icon"></view>
+		<view>{{updata_btn}}</view>
+	</view>
+
+	<view class="user_tabbar_list">
+		<view class="user_tabbar {{index == tabbar_selected?'user_tabbar_selected':''}}" wx:for="{{user_tabbar_arr}}" wx:key="*this" data-index="{{index}}" bindtap="change_tabbar">
+			<view class="all_icon user_tabbar_icon "></view>
+			<view>{{item}}</view>
+		</view>
+	</view>
+</view>
+
+<view class="body">
+	<view class="content_item" wx:if="{{ 0 == tabbar_selected}}" wx:for="123" wx:key="*this">
+		<view class="content_ite">考研经验</view>
+		<view class="content_title">如何考研</view>
+
+		<view class="content">
+			<view class="content_img"></view>
+
+			<view class="content_area">
+
+				<view class="content_text">如题，希望学姐学长给老子支支招！非常感谢！</view>
+
+				<view class="content_opeation_area">
+					<view class="content_opeation">
+						<view class="all_icon_small"></view>
+						<view class="content_date">2020-05-27</view>
+					</view>
+
+					<view class="content_opeation">
+						<view class="all_icon_small"></view>
+						<view class="content_data">6</view>
+
+						<view class="all_icon_small"></view>
+						<view class="content_data">1</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+	<view class="content_item" wx:if="{{ 1 == tabbar_selected}}" wx:for="12" wx:key="*this">
+		<view class="content_title">对于不开学你有什么想法</view>
+		<view class="content_text_two">
+			学校说我们不开学了，不知道你们是怎么看待这个表决的呢?
+		</view>
+		<view class="content_opeation_area">
+			<view class="content_opeation">
+				<view class="all_icon_small"></view>
+				<view class="content_date">2020-05-27</view>
+			</view>
+
+			<view class="content_opeation">
+				<view class="all_icon_small"></view>
+				<view class="content_data">6</view>
+
+				<view class="all_icon_small"></view>
+				<view class="content_data">1</view>
+			</view>
+		</view>
+	</view>
+	<view class="content_item" wx:if="{{ 2 == tabbar_selected}}" wx:for="12" wx:key="*this">
+		<view class="content_title">早睡早起</view>
+		<view class="content_text_th">每天早睡早起，6：30起床，12点睡觉</view>
+		<view class="content_date">已坚持 1/3666天</view>
+	</view>
+</view>

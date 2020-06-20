@@ -11,29 +11,34 @@
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
+		"enhance": false,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": false,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
+		"uglifyFileName": false,
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
+		"compileHotReLoad": false,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		},
-		"useCompilerModule": false,
+		"useIsolateContext": true,
+		"useCompilerModule": true,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.11.2",
-	"appid": "wxc9f61be3be0c587f",
-	"projectname": "life",
+	"appid": "wxb7f00aa1ffd20d12",
+	"projectname": "master",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
@@ -118,6 +123,12 @@
 					"name": "我的",
 					"pathName": "pages/my/my",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人中心详情",
+					"pathName": "pages/myDetails/myDetails",
 					"scene": null
 				}
 			]

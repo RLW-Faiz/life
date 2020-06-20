@@ -7,7 +7,8 @@
     "pages/releaseTopic/releaseTopic",
     "pages/topicContent/topicContent",
     "pages/topicList/topicList",
-    "pages/searchResult/searchResult"
+    "pages/searchResult/searchResult",
+    "pages/myDetails/myDetails"
   ],
   "tabBar": {
     "custom": true,

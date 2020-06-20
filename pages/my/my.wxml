@@ -1,6 +1,6 @@
 <!--pages/my/my.wxml-->
 <view class="my">
-	<view class="my_user_info">
+	<view class="my_user_info" bindtap="go_personal_center">
 		<view class="my_user_img"></view>
 		<view class="my_user_name">陈俊杰</view>
 		<view class="personal_center">个人中心></view>

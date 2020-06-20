@@ -1,20 +1,32 @@
-// pages/my/my.js
+// pages/myDetails/myDetails.js
+const app =getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    index: 2,
-    my_opeations_arr:['我的收藏','我的消息','联系客服']
-  },
-  go_personal_center(){
-    let url = '/pages/myDetails/myDetails'
-    wx.navigateTo({
-      url,
-    })
+    user_tabbar_arr:['经验','话题','打卡'],
+    tabbar_selected: 0,
+    isdisabled:true,
+    updata_btn:'修改资料',
   },
 
+  updata(){
+    this.setData({
+      isdisabled : !this.data.isdisabled,
+      updata_btn : this.data.isdisabled? '保存资料':'修改资料'
+    })
+
+    if(this.data.isdisabled)
+      app.showToast('修改成功','success')
+
+  },
+  change_tabbar(e){
+    this.setData({
+      tabbar_selected: e.currentTarget.dataset.index 
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

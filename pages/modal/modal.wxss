@@ -169,11 +169,3 @@ page{
   line-height: 140rpx;
   text-align: center;
 }
-@keyframes move{
-  0% {
-    width: 20%;
-  }
-  100%{
-    width: 100%;
-  }
-}
