@@ -2,11 +2,7 @@
 page{
   background-color: #ebebeb;
 }
-.all_icon{
-  width: 30rpx;
-  height: 30rpx;
-  background-color: black;
-}
+
 .user_head{
   background-color: white;
 }

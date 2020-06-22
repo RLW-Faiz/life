@@ -2,6 +2,7 @@
 .search_item{
   position: relative;
   padding: 15rpx 30rpx;
+  background-color: white;
 }
 .search_text {
   padding-left: 60rpx;

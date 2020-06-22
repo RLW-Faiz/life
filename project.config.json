@@ -32,7 +32,7 @@
 			"outputPath": ""
 		},
 		"useIsolateContext": true,
-		"useCompilerModule": true,
+		"useCompilerModule": false,
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
@@ -129,6 +129,21 @@
 					"id": -1,
 					"name": "个人中心详情",
 					"pathName": "pages/myDetails/myDetails",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "经验列表",
+					"pathName": "pages/experienceList/experienceList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "分享内容",
+					"pathName": "pages/shareContent/shareContent",
+					"query": "",
 					"scene": null
 				}
 			]

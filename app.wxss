@@ -4,6 +4,11 @@
   padding-right: 30rpx;
   box-sizing: border-box;
 }
+.all_icon{
+  width: 30rpx;
+  height: 30rpx;
+  background-color: black;
+}
 @keyframes move{
   0% {
     width: 20%;
@@ -11,4 +16,7 @@
   100%{
     width: 100%;
   }
+}
+page{
+  background-color: #e6e4e4;
 }

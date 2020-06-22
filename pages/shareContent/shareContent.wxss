@@ -1,0 +1,48 @@
+/* pages/shareContent/shareContent.wxss */
+.share_content{
+  padding: 30rpx;
+  background-color: white;
+}
+.share_user_info{
+  position: relative;
+  display: flex;
+}
+.share_author_img{
+  margin-right: 30rpx;
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  background-color: green;
+}
+.user_info{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.user_name{
+  color: #333;
+}
+.user_data{
+  font-size: 26rpx;
+  color: #b0b0b0;
+}
+.share_opeation{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 20rpx;
+  right: 100rpx;
+}
+.content_title{
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  font-size: 30rpx;
+  font-weight: 800;
+  color: #333;
+}
+.content_area{
+  font-size: 30rpx;
+  color: #6e6e6e;
+  width: 100%;
+  height: 50vh;
+}

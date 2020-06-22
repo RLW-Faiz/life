@@ -1,0 +1,49 @@
+<!--pages/experienceList/experienceList.wxml-->
+<search></search>
+<view class="experience">
+	<view class="experience_box experience_title_box">
+
+		<view class="experience_title">
+			<view class="experience_title_text">考研英语</view>
+
+			<view class="experience_opeation">
+				<view class="all_icon"></view>
+				<view>收藏</view>
+			</view>
+		</view>
+
+		<view class="experience_title_content">分享各种考研经验~</view>
+	</view>
+
+	<view class="experience_content_item experience_box" wx:for="123" wx:key="*this">
+		<view class="content_user_info">
+			<view class="user_img"></view>
+
+			<view class="user_info">
+				<view class="user_name">陈俊杰</view>
+				<view class="user_data">2020-05-17</view>
+			</view>
+
+			<view class="user_title">考研考研</view>
+		</view>
+
+		<view class="content_area">
+			<view class="content_img"></view>
+
+			<view>
+				<view class="content_text">考研考研考研考研考研考研</view>
+				<view class="coneten_opeation">
+					<view class="all_icon_small content_icon"></view>
+					<view>1</view>
+					<view class="all_icon_small content_icon"></view>
+					<view>1</view>
+					<view class="all_icon_small content_icon"></view>
+					<view>1</view>
+				</view>
+			</view>
+			
+		</view>
+	</view>
+
+
+</view>

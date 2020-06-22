@@ -8,7 +8,9 @@
     "pages/topicContent/topicContent",
     "pages/topicList/topicList",
     "pages/searchResult/searchResult",
-    "pages/myDetails/myDetails"
+    "pages/myDetails/myDetails",
+    "pages/experienceList/experienceList",
+    "pages/shareContent/shareContent"
   ],
   "tabBar": {
     "custom": true,
