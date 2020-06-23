@@ -1,4 +1,7 @@
 /**app.wxss**/
+page{
+  background-color: #e6e4e4;
+}
 .container{
   padding-left: 30rpx;
   padding-right: 30rpx;
@@ -9,6 +12,11 @@
   height: 30rpx;
   background-color: black;
 }
+.all_icon_small{
+  width: 20rpx;
+  height: 20rpx;
+  background-color: black;
+}
 @keyframes move{
   0% {
     width: 20%;
@@ -16,7 +24,4 @@
   100%{
     width: 100%;
   }
-}
-page{
-  background-color: #e6e4e4;
 }

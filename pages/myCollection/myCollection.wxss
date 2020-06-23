@@ -1,0 +1,10 @@
+/* pages/myCollection/myCollection.wxss */
+@import '/pages/myNews/myNews.wxss';
+@import '/pages/myDetails/myDetails.wxss';
+.tab{
+  justify-content: space-around;
+  background-color: white;
+}
+.tab_item{
+  width: 310rpx;
+}

@@ -1,4 +1,7 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "comment_send":"/components/comment_send/comment_send",
+    "comment":"/components/comment/comment"
+  },
   "navigationBarTitleText": "分享内容"
 }

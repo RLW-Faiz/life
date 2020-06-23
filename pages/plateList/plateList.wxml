@@ -1,0 +1,9 @@
+<!--pages/plateList/plateList.wxml-->
+<view class="plate_item" wx:for="{{10}}">
+  <view class="plate_img"></view>
+  <view class="plate_content">
+    <view class="plate_title">考研经验</view>
+    <view class="plate_area">分享各种考研经验~</view>
+  </view>
+  <view class="experience_num">1条经验</view>
+</view>

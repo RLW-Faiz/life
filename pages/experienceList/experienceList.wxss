@@ -1,6 +1,6 @@
 /* pages/experienceList/experienceList.wxss */
 .experience{
-  padding: 30rpx;
+  padding: 120rpx 30rpx 30rpx 30rpx;
 }
 .experience_box{
   padding: 30rpx;

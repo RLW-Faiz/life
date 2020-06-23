@@ -1,38 +1,29 @@
-// pages/myDetails/myDetails.js
-const app =getApp()
+// pages/myNews/myNews.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    user_tabbar_arr:['经验','话题','打卡'],
-    tabbar_selected: 0,
-    isdisabled:true,
-    updata_btn:'修改资料',
+    news_arr:
+    [
+      {
+        text: '收到的评论'
+      },
+      {
+        text: '收到的赞'
+      },
+      {
+        text: '系统消息'
+      }
+    ],
+    selected: 0
   },
-  go_detail(e){
-    let index =e.currentTarget.dataset.status,
-    url ='/pages/shareContent/shareContent',
-    url1 = '/pages/topicContent/topicContent',
-    url2 = '/pages/cardDetail/cardDetails';
-    wx.navigateTo({
-      url: index ==1 ? url : index ==2 ? url1 : url2,
-    })
-  },
-  updata(){
-    this.setData({
-      isdisabled : !this.data.isdisabled,
-      updata_btn : this.data.isdisabled? '保存资料':'修改资料'
-    })
 
-    if(this.data.isdisabled)
-      app.showToast('修改成功','success')
-
-  },
-  change_tabbar(e){
+  change_tab(e){
+    let index = e.currentTarget.dataset.status;
     this.setData({
-      tabbar_selected: e.currentTarget.dataset.index 
+      selected : index 
     })
   },
   /**

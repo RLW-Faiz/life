@@ -105,8 +105,8 @@
 					"scene": null
 				},
 				{
-					"id": -1,
-					"name": "话题列表",
+					"id": 5,
+					"name": "话题列表(热点话题的更多)",
 					"pathName": "pages/topicList/topicList",
 					"query": "",
 					"scene": null
@@ -143,6 +143,34 @@
 					"id": -1,
 					"name": "分享内容",
 					"pathName": "pages/shareContent/shareContent",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "板块列表（热门板块的更多）",
+					"pathName": "pages/plateList/plateList",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "申请模板",
+					"pathName": "pages/applyPlate/applyPlate",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的消息",
+					"pathName": "pages/myNews/myNews",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的收藏",
+					"pathName": "pages/myCollection/myCollection",
 					"query": "",
 					"scene": null
 				}

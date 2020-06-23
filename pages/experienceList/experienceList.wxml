@@ -15,7 +15,7 @@
 		<view class="experience_title_content">分享各种考研经验~</view>
 	</view>
 
-	<view class="experience_content_item experience_box" wx:for="123" wx:key="*this">
+	<view class="experience_content_item experience_box" bindtap="goShareContent" wx:for="{{3}}" wx:key="*this">
 		<view class="content_user_info">
 			<view class="user_img"></view>
 

@@ -1,0 +1,22 @@
+<!--pages/myNews/myNews.wxml-->
+<!--  -->
+<view class="tab">
+	<view class="tab_item {{selected ==index ? 'tab_border' :''}}"
+   wx:for="{{news_arr}}" wx:key="*this" data-status="{{index}}" bindtap="change_tab">
+		<view class="all_icon"></view>
+		<view>{{item.text}}</view>
+	</view>
+</view>
+
+<view class="news_item" wx:for="{{4}}" wx:key="*this">
+	<view class="news_head">
+		<view class="news_title">你的话题：对于不开学你有什么想法</view>
+		<view class="news_data">2020-05-27 20:50:07</view>
+	</view>
+
+	<view class="news_reply">
+    {{selected == 0 ? '小游：你大爷还是你大爷啊' : selected==1 ? '小游：老子我点一个赞' : '系统通知的内容'}}
+	</view>
+
+  <view class="opeation {{index==0 ? 'isRead' : 'noRead' }}">{{index==0 ? '已读' : '未读' }}</view>
+</view>

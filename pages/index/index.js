@@ -22,7 +22,7 @@ Page({
     let index =e.currentTarget.dataset.status,
     url2 = '/pages/releaseTopic/releaseTopic',  // 发布话题
     url1 ='', //收藏的模板
-    url = ''; //申请模板
+    url = '/pages/applyPlate/applyPlate'; //申请模板
     wx.navigateTo({
       url: index == 2? url2 :index == 1? url1 :url,
     })
@@ -42,7 +42,7 @@ Page({
     let index =e.currentTarget.dataset.status,
     url2 = '/pages/topicList/topicList',// 发布话题
     url1 ='', //收藏的模板
-    url = ''; //申请模板
+    url = '/pages/plateList/plateList'; //申请模板
     wx.navigateTo({
       url: index == 2? url2:index == 1? url1 :url,
     })

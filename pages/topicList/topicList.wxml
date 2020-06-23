@@ -1,7 +1,6 @@
 <!--pages/topicList/topicList.wxml-->
-<view class="search">
-  <search></search>
-</view>
+
+<search></search>
 
 <view class="search_list">
   <view class="search_item {{index == set_title?'search_title':''}}" wx:for="{{search_item}}" data-index="{{index}}" wx:key="*this" bindtap="change_title">

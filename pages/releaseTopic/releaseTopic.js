@@ -7,16 +7,13 @@ Page({
    */
   data: {
     topic_name: '',
-    isshare: 0,
     max_num: 1500,
     now_num: 0,
   },
   topic_name_inp(e){
-    console.log(e)
-      this.setData({
-        topic_name: e.detail.value
-      })
-      console.log(this.data.topic_name)
+    this.setData({
+      topic_name: e.detail.value
+    })
   },
   topic_content_inp(e){
     if(e.detail.value.length <this.data.max_num)
@@ -27,7 +24,7 @@ Page({
     }
   },
   share(){
-    if(this.data ){
+    if(this.data){
       app.showToast('成功','success')
     }
   },

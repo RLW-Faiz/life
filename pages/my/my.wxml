@@ -7,7 +7,7 @@
 	</view>
 
 	<view class="my_user_opeation">
-		<view class="my_opeations" wx:for="{{my_opeations_arr}}" wx:key="*this">
+		<view class="my_opeations" data-status="{{index}}" wx:for="{{my_opeations_arr}}" wx:key="*this" bindtap="goAndOpen">
 			<view class="my_opeations_group">
 				<view class="my_opeations_icon"></view>
 				<view>{{item}}</view>
@@ -15,5 +15,15 @@
 			<view>></view>
 		</view>
 	</view>
+
+	<view class="modal_tip" wx:if="{{isshow}}"> 
+		<view class="tip">
+			<view class="tip_title">模拟进入客服会话</view>
+			<view class="tip_content">开发者工具暂时不坚持打开客服会话，请使用真机调试</view>
+			<view hover-class="close_tip_hover" class="close_tip" bindtap="colseTip">返回</view>
+		</view>
+	</view>
+
+	
 </view>
 <tabbar tab_index="{{index}}"></tabbar>

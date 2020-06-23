@@ -1,6 +1,9 @@
 /* pages/releaseTopic/releaseTopic.wxss */
+.topic{
+  background-color: white;
+}
 .topic_name{
-  margin-top: 20rpx;
+  padding-top: 20rpx;
   padding-bottom: 20rpx;
   width: 100%;
   height: 4vh;

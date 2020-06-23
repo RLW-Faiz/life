@@ -1,0 +1,60 @@
+<!--pages/myCollection/myCollection.wxml-->
+<view class="tab">
+	<view class="tab_item {{selected ==index ? 'tab_border' :''}}" wx:for="{{news_arr}}" wx:key="*this" data-status="{{index}}" bindtap="change_tab">
+		<view class="all_icon"></view>
+		<view>{{item.text}}</view>
+	</view>
+</view>
+
+<view class="body">
+	<view class="content_item" wx:if="{{selected == 0? true :false}}" wx:for="{{3}}" wx:key="*this" data-status="1" bindtap="go_detail">
+		<view class="content_ite">考研经验</view>
+		<view class="content_title">如何考研</view>
+
+		<view class="content">
+			<view class="content_img"></view>
+
+			<view class="content_area">
+
+				<view class="content_text">如题，希望学姐学长给老子支支招！非常感谢！</view>
+
+				<view class="content_opeation_area">
+					<view class="content_opeation">
+						<view class="all_icon_small"></view>
+						<view class="content_date">2020-05-27</view>
+					</view>
+
+					<view class="content_opeation">
+						<view class="all_icon_small"></view>
+						<view class="content_data">6</view>
+
+						<view class="all_icon_small"></view>
+						<view class="content_data">1</view>
+					</view>
+				</view>
+			</view>
+		</view>
+
+	</view>
+
+	<view class="content_item" wx:if="{{selected == 1? true :false}}" wx:for="{{3}}" data-status="2" wx:key="*this" bindtap="go_detail">
+		<view class="content_title">对于不开学你有什么想法</view>
+		<view class="content_text_two">
+			学校说我们不开学了，不知道你们是怎么看待这个表决的呢?
+		</view>
+		<view class="content_opeation_area">
+			<view class="content_opeation">
+				<view class="all_icon_small"></view>
+				<view class="content_date">2020-05-27</view>
+			</view>
+
+			<view class="content_opeation">
+				<view class="all_icon_small"></view>
+				<view class="content_data">6</view>
+
+				<view class="all_icon_small"></view>
+				<view class="content_data">1</view>
+			</view>
+		</view>
+	</view>
+</view>

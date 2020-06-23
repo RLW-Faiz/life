@@ -6,12 +6,35 @@ Page({
    */
   data: {
     index: 2,
+    isshow: false,
     my_opeations_arr:['我的收藏','我的消息','联系客服']
   },
+
   go_personal_center(){
     let url = '/pages/myDetails/myDetails'
     wx.navigateTo({
       url,
+    })
+  },
+
+  goAndOpen(e){
+    let index =e.currentTarget.dataset.status,
+    url ='/pages/myCollection/myCollection',
+    url1 ='/pages/myNews/myNews';
+    this.setData({
+      isshow : index == 2? 'true':'',
+    })
+    if(index < 2)
+    {
+      wx.navigateTo({
+        url: index == 0 ? url : url1
+      })
+    }
+  },
+
+  colseTip(){
+    this.setData({
+      isshow : false
     })
   },
 

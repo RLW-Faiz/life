@@ -21,7 +21,7 @@
 </view>
 
 <view class="body" wx:else="{{selected == 1}}">
-	<view class="body_item" bindtap="gotoDetail" wx:for="1234" wx:key="*this">
+	<view class="body_item" bindtap="gotoDetail" wx:for="{{4}}" wx:key="*this">
 
 		<view class="body_item_tilte">
 			<view class="body_img"></view>

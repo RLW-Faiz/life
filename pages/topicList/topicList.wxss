@@ -1,10 +1,9 @@
 /* pages/topicList/topicList.wxss */
-.search{
-  width: 100%;
-  font-size: 28rpx;
-  box-sizing: border-box;
+page{
+  background-color: white;
 }
 .search_list{
+  padding-top: 100rpx;
   padding-left: 80rpx;
   padding-right: 80rpx;
   margin-bottom: 30rpx;

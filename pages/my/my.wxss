@@ -54,3 +54,44 @@ page{
   display: flex;
   align-items: center;
 }
+.modal_tip{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .6);
+  z-index: 1;
+}
+.tip{
+  padding: 70rpx 50rpx 0 50rpx;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 570rpx;
+  height: 380rpx;
+  text-align: center;
+  border-radius: 20rpx;
+  box-shadow: 0 0 5rpx 5rpx #939393;
+  background-color: white;
+  transform:translate(-50%,-50%);
+  box-sizing: border-box;
+}
+.tip_title{
+  margin-bottom: 30rpx;
+  font-weight: 800;
+  color: #333;
+}
+.tip_content{
+  color: #b0b0b0;
+}
+.close_tip{
+  margin-top: 50rpx;
+  padding: 30rpx 100rpx;
+  color: #9b9999;
+  font-weight: 800;
+  box-sizing: border-box;
+}
+.close_tip_hover{
+  color: rgb(135, 135, 253);
+}

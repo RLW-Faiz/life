@@ -25,7 +25,7 @@
         <view class="hot_title_border"></view>
         <view class="hot_title_text">{{item.title}}</view>
       </view>
-      <view class="hot_more" data-status="{{index}}"  bindtap="get_more">更多 ></view>
+      <view class="hot_more" data-status="{{index}}"  bindtap="get_more" wx:if="{{index != 1}}">更多 ></view>
     </view>
 
     <view class="hot_issue_item" data-status="{{index}}" wx:for-index='index2' bindtap="get_content" wx:for="1234" wx:key="*this">
@@ -37,7 +37,7 @@
     </view>
 
     <view class="hot_btn">
-      <view class="hot_issue_btn" data-status="{{index}}" bindtap="issue">{{item.btn_text}}</view>
+      <view class="hot_issue_btn" data-status="{{index}}" wx:if="{{index != 1}}" bindtap="issue">{{item.btn_text}}</view>
     </view>
   </view>
 </view>

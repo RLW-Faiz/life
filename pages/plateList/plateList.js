@@ -1,40 +1,13 @@
-// pages/myDetails/myDetails.js
-const app =getApp()
+// pages/plateList/plateList.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    user_tabbar_arr:['经验','话题','打卡'],
-    tabbar_selected: 0,
-    isdisabled:true,
-    updata_btn:'修改资料',
-  },
-  go_detail(e){
-    let index =e.currentTarget.dataset.status,
-    url ='/pages/shareContent/shareContent',
-    url1 = '/pages/topicContent/topicContent',
-    url2 = '/pages/cardDetail/cardDetails';
-    wx.navigateTo({
-      url: index ==1 ? url : index ==2 ? url1 : url2,
-    })
-  },
-  updata(){
-    this.setData({
-      isdisabled : !this.data.isdisabled,
-      updata_btn : this.data.isdisabled? '保存资料':'修改资料'
-    })
-
-    if(this.data.isdisabled)
-      app.showToast('修改成功','success')
 
   },
-  change_tabbar(e){
-    this.setData({
-      tabbar_selected: e.currentTarget.dataset.index 
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

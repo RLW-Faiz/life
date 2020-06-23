@@ -10,7 +10,11 @@
     "pages/searchResult/searchResult",
     "pages/myDetails/myDetails",
     "pages/experienceList/experienceList",
-    "pages/shareContent/shareContent"
+    "pages/shareContent/shareContent",
+    "pages/plateList/plateList",
+    "pages/applyPlate/applyPlate",
+    "pages/myNews/myNews",
+    "pages/myCollection/myCollection"
   ],
   "tabBar": {
     "custom": true,

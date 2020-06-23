@@ -1,0 +1,33 @@
+/* pages/plateList/plateList.wxss */
+.plate_item{
+  padding: 10rpx 30rpx;
+  position: relative;
+  display: flex;
+  background-color: white;
+}
+.plate_img{
+  width: 120rpx;
+  height: 120rpx;
+  background-color: green;
+}
+.plate_content{
+  padding-left: 30rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.plate_title{
+  font-weight: 800;
+  color: #333;
+}
+.plate_area{
+  font-size: 26rpx;
+  color: #969393;
+}
+.experience_num{
+  position: absolute;
+  top: 20rpx;
+  right: 30rpx;
+  font-size: 24rpx;
+  color: #969393;
+}
