@@ -7,7 +7,7 @@
 </view>
 
 <view class="body">
-	<view class="content_item" wx:if="{{selected == 0? true :false}}" wx:for="{{3}}" wx:key="*this" data-status="1" bindtap="go_detail">
+	<view class="content_item" wx:if="{{selected == 0? true :false}}" wx:for="{{3}}" wx:key="*this" data-status="{{selected}}" bindtap="go_detail">
 		<view class="content_ite">考研经验</view>
 		<view class="content_title">如何考研</view>
 
@@ -37,7 +37,7 @@
 
 	</view>
 
-	<view class="content_item" wx:if="{{selected == 1? true :false}}" wx:for="{{3}}" data-status="2" wx:key="*this" bindtap="go_detail">
+	<view class="content_item" wx:if="{{selected == 1? true :false}}" wx:for="{{3}}" data-status="{{selected}}" wx:key="*this" bindtap="go_detail">
 		<view class="content_title">对于不开学你有什么想法</view>
 		<view class="content_text_two">
 			学校说我们不开学了，不知道你们是怎么看待这个表决的呢?

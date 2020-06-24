@@ -1,0 +1,46 @@
+/* pages/login/login.wxss */
+.login_content{
+  padding-left: 60rpx;
+  padding-right: 60rpx;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .7);
+  box-sizing: border-box;
+}
+.user_login{
+  height: 300rpx;
+  line-height: 300rpx;
+  text-align: center;
+  font-size: 64rpx;
+  color: white;
+}
+.user_inp{
+  margin-bottom: 80rpx;
+  padding-left: 30rpx;
+  padding-right: 60rpx;
+  height: 100rpx;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .4);
+  box-sizing: border-box;
+}
+button{
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.logining{
+  margin-bottom: 60rpx;
+  text-align: center;
+  font-size: 43rpx;
+  color: white;
+  background-color: #057764;
+}
+.onther_opeation{
+  display: flex;
+  justify-content: space-between;
+}
+.register{
+  color: #42f870;
+}
+.forget_password{
+  color: #fc3838;
+}

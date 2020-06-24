@@ -31,7 +31,7 @@ Page({
   get_content(e){
     let index =e.currentTarget.dataset.status,
     url2 = '/pages/topicContent/topicContent',
-    url1 = '',
+    url1 = '/pages/experienceList/experienceList',
     url = '/pages/experienceList/experienceList';
     wx.navigateTo({
       url: index == 2? url2:index == 1? url1 :url,

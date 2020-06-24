@@ -14,7 +14,10 @@
     "pages/plateList/plateList",
     "pages/applyPlate/applyPlate",
     "pages/myNews/myNews",
-    "pages/myCollection/myCollection"
+    "pages/myCollection/myCollection",
+    "pages/login/login",
+    "pages/register/register",
+    "pages/forgetPassword/forgetPassword"
   ],
   "tabBar": {
     "custom": true,

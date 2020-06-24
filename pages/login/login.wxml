@@ -1,0 +1,18 @@
+<!--pages/login/login.wxml-->
+<view class="login_content">
+
+	<view class="user_login">User Login</view>
+
+	<form bindsubmit="formSubmit" bindreset="formReset">
+		<input class="user_inp" name="{{input_value[index]}}" wx:for="{{input_arr}}" wx:key="*this" placeholder="{{item}}"></input>
+
+		<button class="logining" formType="submit" style="width:100%">登 录</button>
+	</form>
+
+	<view class="onther_opeation">
+		<view class="register" data-status="1" bindtap="go_add">注册</view>
+		<view class="forget_password" data-status="2" bindtap="go_add">忘记密码</view>
+	</view>
+
+	<view class="isRegister"></view>
+</view>

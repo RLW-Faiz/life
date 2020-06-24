@@ -1,0 +1,5 @@
+/* pages/register/register.wxss */
+@import '/pages/login/login.wxss';
+.user_inp{
+  margin-bottom: 60rpx;
+}

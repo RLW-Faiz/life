@@ -1,36 +1,15 @@
-// pages/myCollection/myCollection.js
+// pages/register/register.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    news_arr:
-    [
-      {
-        img: '',
-        text: '我收藏的经验'
-      },
-      {
-        img: '',
-        text: '我收藏的话题'
-      }
-    ],
-    selected: 0
+    input_arr:['用户名','密码','再次输入密码','手机号码'],
+    input_value:['user_name','user_pwd','user_pwd_again','user_phone']
   },
-  change_tab(e){
-    let index = e.currentTarget.dataset.status;
-    this.setData({
-      selected : index 
-    })
-  },
-  go_detail(e){
-    let index =e.currentTarget.dataset.status,
-    url ='/pages/shareContent/shareContent',
-    url1 = '/pages/topicContent/topicContent';
-    wx.navigateTo({
-      url: index ==0 ? url : url1,
-    })
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
   },
   /**
    * 生命周期函数--监听页面加载

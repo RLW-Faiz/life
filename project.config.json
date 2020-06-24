@@ -173,6 +173,26 @@
 					"pathName": "pages/myCollection/myCollection",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "注册",
+					"pathName": "pages/register/register",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "忘记密码",
+					"pathName": "pages/forgetPassword/forgetPassword",
+					"scene": null
 				}
 			]
 		}

@@ -1,37 +1,20 @@
-// pages/myCollection/myCollection.js
+// pages/forgetPassword/forgetPassword.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    news_arr:
-    [
-      {
-        img: '',
-        text: '我收藏的经验'
-      },
-      {
-        img: '',
-        text: '我收藏的话题'
-      }
-    ],
-    selected: 0
+    input_arr:['手机号码','验证码'],
+    new_pwd:['密码','再次输入密码'],
+    input_value:['user_phone','code'],
+    input_value2:['user_pwd','user_pwd_again']
   },
-  change_tab(e){
-    let index = e.currentTarget.dataset.status;
-    this.setData({
-      selected : index 
-    })
+
+  formSubmit: function (e) {
+    console.log('form发生了submit事件，携带数据为：', e.detail.value);
   },
-  go_detail(e){
-    let index =e.currentTarget.dataset.status,
-    url ='/pages/shareContent/shareContent',
-    url1 = '/pages/topicContent/topicContent';
-    wx.navigateTo({
-      url: index ==0 ? url : url1,
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */
