@@ -9,7 +9,10 @@ Page({
     title_inp: '',
     max_num: 1500,
     now_num: 0,
+    max_content: 1,
+    img_num : 0
   },
+
   content_inp(e){
     if(e.detail.value.length <this.data.max_num)
     {
@@ -18,17 +21,41 @@ Page({
       })
     }
   },
+
   title_inp(e){
     this.setData({
       title_inp: e.detail.value
     })
   },
+
   share(){
     if(this.data){
       app.showToast('成功','success')
     }
   },
 
+  get_img_num(e){
+    let img_num =e.detail.img_num;
+    this.setData({
+      img_num
+    })
+  },
+
+  // 图片上传
+  uploadFile(){
+    wx.uploadFile({
+      url: 'https://example.weixin.qq.com/upload', //仅为示例，非真实的接口地址
+      filePath: tempFilePaths[0],
+      name: 'file',
+      formData: {
+        'user': 'test'
+      },
+      success (res){
+        const data = res.data
+        //do something
+      }
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

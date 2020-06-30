@@ -1,0 +1,10 @@
+<!--components/choose_image/choose_image.wxml-->
+<view class="choose_image">
+	<view class="image_item" wx:for="{{img_arr}}" wx:key="index">
+		<image class="get_image" src="{{img_arr[index]}}"></image>
+
+		<view hover-class="delete_hover" class="delete" bindtap="delete_item" data-index="{{index}}">X</view>
+	</view>
+
+	<view class="image_item" bindtap="getImage"></view>
+</view>

@@ -49,6 +49,15 @@ Page({
   },
   //事件处理函数
   onLoad: function () {
-
+    // this.get_list()
   },
+  get_list(){
+    let url = 'http://cjj.free.idcfengye.com/verificationCode',
+    data = '',
+    method ='get';
+    app.wx_ajax(url,data,method)
+    .then( res => {
+      console.log(res.data)
+   });
+  }
 })

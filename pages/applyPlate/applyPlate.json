@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "choose_image":"/components/choose_image/choose_image"
+  },
   "navigationBarTitleText": "申请板块"
 }

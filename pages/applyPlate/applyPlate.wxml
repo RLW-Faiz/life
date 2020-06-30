@@ -6,9 +6,9 @@
 	
 	<view class="content_opeation_text">
 		<view class="img_text">图片(选填)</view>
-		<view class="img_num">0/1</view>
+		<view class="img_num">{{img_num}}/1</view>
 	</view>
-	<view class="get_img"></view>
+	<choose_image max_content="{{max_content}}" bind:img_num="get_img_num"></choose_image>
 
 	<view class="issue_btn" style="{{title_inp != '' && now_num >0 ? 'background-color: #4f4feb' : ''}}" bindtap="{{topic_name != '' && now_num >0 ? 'share':''}}">发布</view>
 </view>

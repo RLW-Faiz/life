@@ -2,9 +2,9 @@
 App({
   onLaunch: function () {
     // 展示本地存储能力
-    var logs = wx.getStorageSync('logs') || []
-    logs.unshift(Date.now())
-    wx.setStorageSync('logs', logs)
+    // var logs = wx.getStorageSync('logs') || []
+    // logs.unshift(Date.now())
+    // wx.setStorageSync('logs', logs)
 
     // 登录
     wx.login({
@@ -36,11 +36,71 @@ App({
   globalData: {
     userInfo: null
   },
-  showToast(t,i){
-    wx.showToast({
-      title: t,
-      icon: i,
-      duration: 2000
+
+  // ajax
+  
+  wx_ajax: function (url,data='',method) {
+
+    // 地址
+    const APIURL = '';
+
+    return new Promise(function (resolve, reject) {
+      wx.request({
+        url: APIURL + url,
+        data,
+        method,
+
+        success(res) {
+          //跟服务器通信是否正常
+          switch(res.statusCode)
+          {
+            case 200 : 
+              resolve(res.data);
+              break;
+            case 400 : 
+              wx.showToast({
+                title:res.data.msg,
+                icon:'none',
+                duration: 1500
+              })
+              resolve();
+              break;
+            case 500 : 
+              wx.showToast({
+                title:res.data.msg,
+                icon:'none',
+                duration: 1500
+              })
+              resolve();
+              break;
+            default:
+              wx.showToast({
+                title:res.data.msg,
+                icon:'none',
+                duration: 1500
+              })
+          }
+        },
+
+        fail(e) {
+          wx.showToast({
+            title:'网络异常',
+            icon:'none',
+            duration: 1500
+          })
+          reject(e)
+        }
+      });
     })
-  }
+  },
+
+  //显示消息提示框 
+  showToast(title, icon) {
+    wx.showToast({
+      title,
+      icon,
+      duration: 1500
+    })
+  },
+
 })
