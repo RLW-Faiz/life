@@ -5,10 +5,11 @@ App({
     // var logs = wx.getStorageSync('logs') || []
     // logs.unshift(Date.now())
     // wx.setStorageSync('logs', logs)
-
+    
     // 登录
     wx.login({
       success: res => {
+        console.log(res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -38,11 +39,10 @@ App({
   },
 
   // ajax
-  
   wx_ajax: function (url,data='',method) {
 
     // 地址
-    const APIURL = '';
+    const APIURL = 'http://cjj1.vipgz1.idcfengye.com/';
 
     return new Promise(function (resolve, reject) {
       wx.request({
@@ -99,7 +99,7 @@ App({
     wx.showToast({
       title,
       icon,
-      duration: 1500
+      duration: 2000
     })
   },
 

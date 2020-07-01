@@ -8,8 +8,16 @@ Page({
     input_arr:['用户名','密码','再次输入密码','手机号码'],
     input_value:['user_name','user_pwd','user_pwd_again','user_phone']
   },
+
   formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    if(e.detail.value.user_pwd == e.detail.value.user_pwd_again)
+    {
+      console.log('form发生了submit事件，携带数据为：', e.detail.value);
+    }
+    else{
+      console.log(e.detail.value.user_pwd);
+      console.log(e.detail.value.user_pwd_again);
+    }
   },
   /**
    * 生命周期函数--监听页面加载

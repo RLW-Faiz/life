@@ -85,3 +85,54 @@
   margin-bottom: 20rpx;
   height: 150rpx;
 }
+.modal{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 230%;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 12;
+}
+.go_login{
+  position: absolute;
+  top:50%;
+  left:50%;
+  width: 500rpx;
+  height: 300rpx;
+  border-radius: 10rpx;
+  border: 1rpx solid #b0b0b0;
+  box-shadow: 0 0 5rpx 7rpx #dddddd;
+  background-color: white;
+  transform:translate(-50%,-50%);
+  animation: up 1s ease-in;
+  z-index: 13;
+}
+.go_login_title{
+  margin-top: 40rpx;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.btn_area{
+  width: 50%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+.go_login_btn{
+  display: flex;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  box-sizing: border-box;
+}
+@keyframes up{
+  0%{
+    top: 0%
+  }
+  100%{
+    top: 50%;
+  }
+}

@@ -6,7 +6,7 @@ Page({
    */
   data: {
     input_arr:['手机号码','验证码'],
-    new_pwd:['密码','再次输入密码'],
+    new_pwd:['新密码','再次输入密码'],
     input_value:['user_phone','code'],
     input_value2:['user_pwd','user_pwd_again']
   },

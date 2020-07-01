@@ -6,6 +6,8 @@
 	<form bindsubmit="formSubmit" bindreset="formReset">
 		<input class="user_inp" name="{{input_value[index]}}" wx:for="{{input_arr}}" wx:key="*this" placeholder="{{item}}"></input>
 
+		<view class="login_code" bindtap="getCode">{{code}}</view>
+
 		<button class="logining" formType="submit" style="width:100%">登 录</button>
 	</form>
 

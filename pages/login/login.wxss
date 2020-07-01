@@ -23,6 +23,12 @@
   background-color: rgba(0, 0, 0, .4);
   box-sizing: border-box;
 }
+.login_code{
+  position: absolute;
+  top: 57vh;
+  right: 100rpx;
+  z-index: 5;
+}
 button{
   height: 100rpx;
   line-height: 100rpx;

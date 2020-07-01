@@ -1,29 +1,74 @@
 // pages/login/login.js
+const app = getApp()
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    input_arr:['用户名','密码','验证码'],
-    input_value:['user_name','user_pwd','code']
+    code: '',
+    input_arr: ['用户名', '密码', '验证码'],
+    input_value: ['user_name', 'user_pwd', 'code']
   },
-  go_add(e){
+
+  go_add(e) {
     let index = e.currentTarget.dataset.status,
-    url = "/pages/register/register",
-    url1 = "/pages/forgetPassword/forgetPassword";
+      url = "/pages/register/register",
+      url1 = "/pages/forgetPassword/forgetPassword";
     wx.navigateTo({
-      url: index == 1? url : url1
+      url: index == 1 ? url : url1
     })
   },
-  formSubmit: function (e) {
-    console.log('form发生了submit事件，携带数据为：', e.detail.value);
+
+  formSubmit(e) {
+    if(e.detail.value.code != this.data.code)
+    {
+      app.showToast('验证码错误', 'none');
+      this.getCode();
+      return;
+    }
+      
+    let url = 'login',
+      data = {
+        username: e.detail.value.user_name,
+        password: e.detail.value.user_pwd
+      },
+      method = 'get';
+    app.wx_ajax(url, data, method)
+      .then(res => {
+        if(res.data != 'loginError')
+        {
+          app.showToast('登录成功', res.data.result);
+          wx.setStorageSync('userInfo', res.data.user)
+          wx.switchTab({
+            url: '/pages/index/index',
+          })
+        }
+        else
+        {
+          app.showToast('用户名或者密码错误', 'none')
+        }
+      })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    this.getCode()
+  },
 
+  getCode() {
+    let that = this,
+      url = 'verificationCode',
+      data = '',
+      method = 'get';
+    app.wx_ajax(url, data, method)
+      .then(res => {
+        console.log()
+        that.setData({
+          code: res.data.code
+        })
+      })
   },
 
   /**
