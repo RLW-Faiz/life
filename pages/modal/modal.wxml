@@ -7,43 +7,46 @@
 	</view>
 </view>
 
-<view class="body_launch" wx:if="{{selected == 2}}">
-	<input class="launch_title" placeholder="请输入标题"></input>
-	<view class="launch_text">
-		<textarea class="set_launchtext" placeholder="请输入内容"></textarea>
-		<view class="text_num">0/500</view>
+<form wx:if="{{selected == 2}}" bindsubmit="formSubmit">
+	<view class="body_launch">
+		<input class="launch_title" name="title" placeholder="请输入标题"></input>
+		<view class="launch_text">
+			<textarea class="set_launchtext" name="content" bindinput="set_content" placeholder="请输入内容"></textarea>
+			<view class="text_num">{{now_count}}/{{max_count}}</view>
+		</view>
+		<view class="day_mount">
+			<view class="day_text">总的天数：</view>
+			<input class="set_day" name="insistDay" placeholder="请输入总的天数"></input>
+		</view>
+		<button class="sure" formType="submit">确认</button>
 	</view>
-	<view class="day_mount">
-		<view class="day_text">总的天数：</view>
-		<input class="set_day" placeholder="请输入总的天数"></input>
-	</view>
-	<view class="sure">确认</view>
-</view>
+</form>
+
 
 <view class="body" wx:else="{{selected == 1}}">
-	<view class="body_item" bindtap="gotoDetail" wx:for="{{4}}" wx:key="*this">
+	<view class="body_item" bindtap="gotoDetail" wx:for="{{playCord}}" wx:key="*this">
 
 		<view class="body_item_tilte">
 			<view class="body_img"></view>
 
 			<view class="body_user_info">
-				<view class="body_user">发起者</view>
-				<view class="body_data">2020/3/16</view>
+				<view class="body_user">{{item.username}}</view>
+				<view class="body_data">{{item.createTime}}</view>
 			</view>
 
 			<view class="body_info_content">
-				打卡内容
+				{{item.title}}
 			</view>
 		</view>
 
 		<view class="body_content">
 			<view>
-				每天早睡早起，6：30起床，12睡觉
+				{{item.content}}
 			</view>
 		</view>
 
 		<view class="body_footer">
-			<view>还需要坚持 <text class="countdown">100</text> 天</view>
+			<view>还需要坚持 <text class="countdown">{{item.insistDay}}</text> 天</view>
 			<view>已经加入 1 人</view>
 		</view>
 	</view>

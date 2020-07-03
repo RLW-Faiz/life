@@ -9,7 +9,7 @@ App({
     // 登录
     wx.login({
       success: res => {
-        console.log(res)
+        // console.log(res)
         // 发送 res.code 到后台换取 openId, sessionKey, unionId
       }
     })
@@ -42,7 +42,8 @@ App({
   wx_ajax: function (url,data='',method) {
 
     // 地址
-    const APIURL = 'http://cjj1.vipgz1.idcfengye.com/';
+    // const APIURL = 'http://cjj1.vipgz1.idcfengye.com/';
+    const APIURL = 'http://cjj.free.idcfengye.com/';
 
     return new Promise(function (resolve, reject) {
       wx.request({

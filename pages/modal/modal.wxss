@@ -166,6 +166,7 @@ page{
 .sure{
   height: 140rpx;
   font-size: 40rpx;
-  line-height: 140rpx;
+  line-height: 100rpx;
   text-align: center;
+  background-color: white;
 }

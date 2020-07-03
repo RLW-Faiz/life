@@ -57,7 +57,7 @@ Page({
   //事件处理函数
   onLoad: function () {
     let userInfo = wx.getStorageSync('userInfo')
-    console.log(userInfo)
+    // console.log(userInfo)
     if (userInfo == '') {
       this.setData({
         ifshow : true
